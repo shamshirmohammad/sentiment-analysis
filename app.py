@@ -39,20 +39,6 @@ st.set_page_config(
 st.title('Sentiment Analysis')
 st.markdown('''
 - This Web App was built by utilizing the capability of machine learning to classify
-movie reviews into either negative or positive sentiment.
-- The movie review data was downloaded from [Kaggle](https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews),
-and it was collected from IMDB movie reviews.
-- Not every single review in the data was labeled correctly, so there may be incorrect predictions
-when you try to run the sentiment analysis in the Web App here.
-- And unfortunately the movie names were not included in the dataset, sorry about that 😔
-
-
-- App built by [Anson](https://www.linkedin.com/in/ansonnn07/)
-- Built with `Python`, using `streamlit`, `sklearn`, `pytorch`, `pandas`, `numpy`
-
-**Links**: [GitHub](https://github.com/ansonnn07/IMDB-Review-Sentiment-Analysis), 
-[LinkedIn](https://www.linkedin.com/in/ansonnn07/),
-[Kaggle](https://www.kaggle.com/ansonnn/code)
 ''')
 
 
