@@ -36,11 +36,10 @@ st.set_page_config(
 )
 
 # title and description
-st.title('Sentiment Analysis')
+st.title('IMDb Review Sentiment Analysis')
 st.markdown('''
-- This Web App was built by utilizing the capability of machine learning to classify
+- This Web App was built by utilizing the capability of Machine Learning
 ''')
-
 
 st.markdown("""
 ## **How to Use the App**
