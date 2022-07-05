@@ -41,20 +41,7 @@ st.markdown('''
 - This Web App was built by utilizing the capability of Machine Learning
 ''')
 
-st.markdown("""
-## **How to Use the App**
-You have **two options**:
-- Type your **own review** into the text box and click the **"Analyze"** button to test the predicted result!
-- Or you can click the **"Random review"** to randomly generate a review from the database and let the model
-predict the sentiment! But bear in mind that there may be incorrect predictions and it will let you know
-if the prediction is incorrect.
-
-Perhaps you can try to spam the **"Random Review"** button until you get an incorrect prediction 
-from the model, but beware that the model has an accuracy of 90% out of 50k reviews! 😜
-""")
-
 st.markdown('---')
-
 
 with st.form("input_form"):
     txt = st.text_area("Type your review text!")
