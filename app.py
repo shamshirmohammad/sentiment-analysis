@@ -37,12 +37,7 @@ st.set_page_config(
 
 # title and description
 st.title('IMDb Review Sentiment Analysis')
-st.markdown('''
-- This Web App was built by utilizing the capability of Machine Learning
-''')
-
 st.markdown('---')
-
 with st.form("input_form"):
     txt = st.text_area("Type your review text!")
 
