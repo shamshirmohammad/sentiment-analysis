@@ -67,9 +67,9 @@ if submitted:
     sentiment = get_sentiment(txt)
     st.subheader("""Your review is ...""")
     if sentiment == 'positive':
-        st.success(f"Review Detected as {sentiment.title()} ✅")
+        st.success(f"✅ {sentiment.title()} ✅")
     else:
-        st.error(f"Review Detected as {sentiment.title()} ❌")
+        st.error(f"❌ {sentiment.title()} ❌")
 
 if randomized:
     idx = random.randint(0, len(df))
@@ -81,10 +81,10 @@ if randomized:
     st.write(f'{txt}', unsafe_allow_html=True)
     st.subheader(f'Predicted sentiment ...')
     if sentiment == 'positive':
-        st.success(f"Review Detected as {sentiment.title()} ✅")
+        st.success(f"✅ {sentiment.title()} ✅")
 
     else:
-        st.error(f"Review Detected as {sentiment.title()} ❌")
+        st.error(f"❌ {sentiment.title()} ❌")
 
     if sentiment != target:
         st.error(f"But the actual review was **{target.upper()}** ...")
