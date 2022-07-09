@@ -6,25 +6,21 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
-
 @st.cache(show_spinner=False, allow_output_mutation=True)
 def load_model():
     vectorizer = joblib.load('data/vectorizer.joblib')
     model = joblib.load('data/logreg.joblib')
     return vectorizer, model
 
-
 @st.cache(show_spinner=False)
 def load_df():
     return pd.read_csv('data/IMDB Dataset.csv')
-
 
 def get_sentiment(txt):
     txt_tf = vectorizer.transform([txt])
     pred = model.predict(txt_tf)[0]
     sentiment = class_names[pred]
     return sentiment
-
 
 vectorizer, model = load_model()
 df = load_df()
@@ -43,7 +39,6 @@ with st.form("input_form"):
 
     submitted = st.form_submit_button(label='Analyze')
     randomized = st.form_submit_button(label='Random review!')
-
 
 if submitted:
     sentiment = get_sentiment(txt)
