@@ -65,5 +65,3 @@ if randomized:
 
     if sentiment != target:
         st.error(f"But the actual review was **{target.upper()}** ...")
-
-# st.image(Image.open(''))
